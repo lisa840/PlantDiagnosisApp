@@ -1,0 +1,50 @@
+/* static/css/style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8f5;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #2e8b57;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="file"] {
+    margin: 10px 0;
+    padding: 8px;
+}
+
+input[type="submit"] {
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #246b45;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #444;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plant Diagnosis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <h1>🌿 Plant Diagnosis Web App</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <p>Select an image of a plant leaf:</p>
+        <input type="file" name="image" required>
+        <button type="submit">Diagnose</button>
+    </form>
+
+    {% if prediction %}
+        <h2>🩺 Diagnosis Result: {{ prediction }}</h2>
+        <img src="{{ url_for('static', filename=image) }}" width="300" />
+    {% endif %}
+</body>
+</html>
+
+
